@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0cf361407f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Desktop</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="btn-file">
+        <i class="fas fa-folder" style="font-size: 3rem"></i>
+        <p style="font-size: 1.5rem"><strong>Files</strong></p>
+      </button>
+
+      <div class="login-modal">
+        <h1 style="text-align: center">Login User</h1>
+        <div class="row">
+          <div class="col">
+            <p>User Name</p>
+          </div>
+          <div class="col">
+            <input type="text" class="login-input" id="UserName" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Password</p>
+          </div>
+          <div class="col">
+            <input type="password" class="login-input" id="Password" />
+          </div>
+        </div>
+        <div class="row hidden" id="Denied">
+          <p class="txt-denied">Access Denied!</p>
+        </div>
+        <div class="row">
+          <button class="btn-login">Login</button>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <div class="row-menu">
+        <div class="dropup">
+          <button class="btn-start">Start</button>
+          <div class="dropup-content hidden">
+            <ul>
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-email hidden">
+        <h2>Classified Email</h2>
+        <p>To: Special Agent</p>
+        <p>CC: </p>
+        <br>
+        <hr>
+        <br>
+        <p>For your eyes only:</p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <br>
+        <p>Destroy Upon Reading,</p>
+        <p>Oversight</p>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

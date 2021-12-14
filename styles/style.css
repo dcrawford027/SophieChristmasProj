@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkgreen;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.col {
+  display: inline-block;
+  min-width: 26%;
+}
+
+.row {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: darkgreen;
+  border: 3px solid black;
+}
+
+.btn-file {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  border: none;
+  background: none;
+}
+
+.btn-file:hover, .btn-file:hover, .btn-start:hover {
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: black;
+  border: 2px solid darkgreen;
+  color: darkgreen;
+  margin: 10px;
+  height: 30px;
+  width: 60px;
+  margin-left: 150px;
+}
+
+.btn-start {
+  background: none;
+  border: none;
+  margin: 10px;
+  height: 30px;
+  width: 60px;
+  color: darkgreen;
+  font-size: 1.8rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  border: none;
+  background: none;
+}
+
+.login-input {
+  background-color: black;
+  color: darkgreen;
+  border: 1px solid darkgreen;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.txt-denied {
+  font-size: 1.5rem;
+  color: darkgreen;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: darkgreen;
+  padding: 3rem;
+  border: 3px solid black;
+  z-index: 10;
+  justify-content: center;
+}
+
+.login-modal p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal-email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: darkgreen;
+  padding: 1rem;
+  z-index: 10;
+  justify-content: left;
+  height: 750px;
+  width: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.row-menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  position: absolute;
+  bottom: 50px;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropup-content li {
+  color: darkgreen;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content li:hover {
+  cursor: pointer;
+}
