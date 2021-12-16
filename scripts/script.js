@@ -9,6 +9,7 @@ const txtDenied = document.querySelector('#Denied');
 const btnLogin = document.querySelector('.btn-login');
 const btnStart = document.querySelector('.btn-start');
 const btnFile = document.querySelector('.btn-file');
+const btnCloseEmail = document.querySelector('.btn-close-email');
 const dropupContent = document.querySelector('.dropup-content');
 const emailModal = document.querySelector('.modal-email');
 
@@ -16,6 +17,10 @@ const closeLoginModal = function () {
   loginModal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
+
+const closeEmail = function() {
+  emailModal.classList.add('hidden');
+}
 
 btnLogin.addEventListener('click', function () {
   if (document.getElementById('UserName').value == validUserName && document.getElementById('Password').value == validPassword) {
@@ -27,18 +32,8 @@ btnLogin.addEventListener('click', function () {
   }
 });
 
-btnStart.addEventListener('click', function() {
-    if (dropupContent.classList.contains('hidden')) {
-        dropupContent.classList.remove('hidden');
-    } else {
-        dropupContent.classList.add('hidden');
-    }
-});
-
 btnFile.addEventListener('click', function() {
-    if (emailModal.classList.contains('hidden')) {
-        emailModal.classList.remove('hidden');
-    } else {
-        emailModal.classList.add('hidden');
-    }
+    emailModal.classList.remove('hidden');
 })
+
+btnCloseEmail.addEventListener('click', closeEmail);
