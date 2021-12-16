@@ -39,7 +39,7 @@ h1 {
   color: darkgreen;
 }
 
-.btn-file:hover, .btn-close-email:hover, .btn-start:hover {
+.btn-file:hover, .btn-close-email:hover, .btn-start:hover, .btn-close-window-files {
   cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ h1 {
   font-size: 1.8rem;
 }
 
-.btn-close-email {
+.btn-close-email, .btn-close-window-files {
   position: absolute;
   top: 1%;
   right: 3%;
@@ -71,6 +71,24 @@ h1 {
   color: #333;
   border: none;
   background: none;
+}
+
+.btn-email {
+  background: none;
+  border: none;
+  margin: 10px;
+  height: 30px;
+  width: 100%;
+  color: darkgreen;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.btn-email:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+  color: black;
 }
 
 .login-input {
@@ -172,4 +190,17 @@ h1 {
 
 .dropup:hover .dropup-content {
   display: block;
+}
+
+.window-files {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+  background-color: black;
+  border: 3px solid darkgreen;
+  padding: 20px;
+  z-index: 5;
 }
