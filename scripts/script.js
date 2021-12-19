@@ -12,6 +12,7 @@ const btnFile = document.querySelector('.btn-file');
 const btnCloseEmail = document.querySelector('.btn-close-email');
 const btnCloseWindowFiles = document.querySelector('.btn-close-window-files');
 const btnEmail = document.querySelector('.btn-email');
+const btnMemoryGame = document.querySelector('.btn-memory-game');
 const dropupContent = document.querySelector('.dropup-content');
 const emailModal = document.querySelector('.modal-email');
 const windowFiles = document.querySelector('.window-files');
@@ -37,6 +38,10 @@ const openFilesWindow = function() {
   windowFiles.classList.remove('hidden');
 }
 
+const playMemoryGame = function() {
+  window.location.href = '../TopSecretComputer/Memory-Game-fend/index.html';
+}
+
 btnLogin.addEventListener('click', function () {
   if (document.getElementById('UserName').value == validUserName && document.getElementById('Password').value == validPassword) {
     closeLoginModal();
@@ -51,3 +56,4 @@ btnEmail.addEventListener('click', openEmail);
 btnFile.addEventListener('click', openFilesWindow);
 btnCloseEmail.addEventListener('click', closeEmail);
 btnCloseWindowFiles.addEventListener('click', closeFilesWindow);
+btnMemoryGame.addEventListener('click', playMemoryGame);
